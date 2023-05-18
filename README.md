@@ -28,15 +28,16 @@ OPENAI_API_TYPE=open_ai
 
 12. "docker build -t niftybridge ."
 
-13. "docker run niftybridge"
+13. "docker run -p 8000:8000 niftybridge"
 
 
-15. In your browser, open "http://127.0.0.1:8000/docs"
-16. You will find line starts with "POST", press on it
-17. Under the arrow (in "Parameters" line) press "Try it out"
-18. In "Request body" field change "string" to your question to NiftyBridge AI. 
+
+14. In your browser, open "http://127.0.0.1:8000/docs"
+15. You will find line starts with "POST", press on it
+16. Under the arrow (in "Parameters" line) press "Try it out"
+17. In "Request body" field change "string" to your question to NiftyBridge AI. 
 (example: "query": "string" -> "query": "What is NiftyBridge?")
-19. Press "execute" and get an answer
+18. Press "execute" and get an answer
 
 
 **PROBLEMS**
