@@ -11,12 +11,12 @@ app = FastAPI()
 
 
 @app.get('/api/send/')
-def create_query():
+async def create_query():
     return "Ask me something"
 
 
 @app.post('/api/send/')
-def create_query(query: Prompt):
+async def create_query(query: Prompt):
 
     answer = get_answer(query=str(query))
     return answer
