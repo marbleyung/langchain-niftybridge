@@ -25,6 +25,7 @@ If you WANT to use a docker:
 12. "docker build -t niftybridge ."
 12.1 "docker run niftybridge"
 _
+
 13. In your browser, open "http://127.0.0.1:8000/docs"
 14. You will find line starts with "POST", press on it
 15. Under the arrow (in "Parameters" line) press "Try it out"
