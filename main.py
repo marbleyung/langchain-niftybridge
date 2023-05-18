@@ -79,10 +79,13 @@ def answer_to_prompt(query: str, chain: RetrievalQA):
 def get_answer(query, pdf=PDF_NAME, *args, **kwargs):
     document = convert_pdf(pdf=pdf)
     print('Document converted')
+    
     chunks = split_text_to_chunks(document=document)
     print('Document spliced into chunks')
+    
     db = add_text_to_db(chunks=chunks)
     print('DB has been created')
+    
     prompt_template = create_prompt_template()
     chain = create_chain(db=db,
                          prompt_template=prompt_template)
@@ -91,10 +94,9 @@ def get_answer(query, pdf=PDF_NAME, *args, **kwargs):
     if check_prompt_length(query):
         answer = answer_to_prompt(query, chain=chain)
         result = answer['result'].strip()
-        print(result)
         return result
     else:
-        raise ValueError('Your prompt is too long')
+        raise ValueError('Prompt is too long')
 
 
 

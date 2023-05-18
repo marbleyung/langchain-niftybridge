@@ -16,7 +16,11 @@ async def create_query():
 
 
 @app.post('/api/send/')
+<<<<<<< HEAD
 async def create_query(query: Prompt):
 
+=======
+def create_query(query: Prompt):
+>>>>>>> 00025123a726e674b3235ab9176285fd3ea7fd58
     answer = get_answer(query=str(query))
     return answer

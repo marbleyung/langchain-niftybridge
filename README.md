@@ -1,6 +1,7 @@
 # langchain-niftybridge
 This API service allows you to ask any questions realted to NiftyBridge.pdf to OpenAI LLM. It also allows you to do the same with any other PDF's.
-Here is some instructions. Instructions in " " means commands which you should run in terminal
+Here is some instructions. 
+Instructions in _quotes_ ("cd {directory/name}") means **commands** which you should **run in terminal**
 _
 On Windows
 1. Win+R -> "cmd" -> enter
