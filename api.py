@@ -17,6 +17,5 @@ def create_query():
 
 @app.post('/api/send/')
 def create_query(query: Prompt):
-
     answer = get_answer(query=str(query))
     return answer
