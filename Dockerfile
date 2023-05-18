@@ -6,4 +6,4 @@ ENV FASTAPI_APP=api.py
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONBUFFERED 1
 EXPOSE 8000
-CMD [ "uvicorn", "fastapiapp.api:app", "--reload", "--host", "127.0.0.1"]
+CMD [ "uvicorn", "fastapiapp.api:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
