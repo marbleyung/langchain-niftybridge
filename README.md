@@ -20,11 +20,11 @@ OPENAI_API_KEY=sk-YOURSECRETKEY
 
 OPENAI_API_TYPE=open_ai
 
-If you DON'T want to use a docker:
+**If you DON'T want to use a docker:**
 
 12. "uvicorn api:app --reload"
 
-If you WANT to use a docker:
+**If you WANT to use a docker:**
 
 12. "docker build -t niftybridge ."
 
@@ -37,3 +37,7 @@ If you WANT to use a docker:
 18. In "Request body" field change "string" to your question to NiftyBridge AI. 
 (example: "query": "string" -> "query": "What is NiftyBridge?")
 19. Press "execute" and get an answer
+
+
+**PROBLEMS**
+If you're getting 500 Internal Server Error, make sure that you paste valid API KEY into .env var, make sure that the name of the var is OPENAI_API_KEY. Make sure, that you have enough credits on openai platform.
